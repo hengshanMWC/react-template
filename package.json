@@ -14,7 +14,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "format": "eslint --fix \"{src,mock}/**/*.{js,css,less,ts,tsx}\" --ignore-path .gitignore",
+    "format": "eslint --fix \"src/**/*.{js,css,less,ts,tsx}\" --ignore-path .gitignore",
     "commit": "cz",
     "lint-staged": "lint-staged",
     "prepare": "husky install"
@@ -63,6 +63,6 @@
     "vite-plugin-style-import": "^2.0.0"
   },
   "lint-staged": {
-    "{src,mock}/**/*.{js,css,less,ts,tsx}": "npm run format"
+    "src/**/*.{js,css,less,ts,tsx}": "npm run format"
   }
 }
